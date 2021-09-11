@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="dsstyle.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+		<title>Denshi</title>
+		<link rel="icon" href="Image/dsicon.jpg"/>
+	</head>
+
+	<body background="Image/dsbg.jpg">
+        <div class="container">
+	    <div class="navbar">
+			<div class="logo">
+				<img src="Image/dslogo.jpg" alt="Denshi Logo" width=210px height=70px/>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="dsindex.html"class="nav">Home</a></li>
+					<li><a href="dsproducts.html" class="nav">Products</a></li>
+					<li><a href="dsfaq.html" class="nav">FAQ</a></li>
+					<li><a href="dscontactus.html" class="nav">Contact us</a></li>
+					<li><a href="dsaccounts.html" class="nav">Account</a></li>
+				</ul>
+				<a href="dscart.html"><img src="Image/Cart.png" alt="Cart" width=30px height=30px/></a>
+			</nav>				
+		</div>
+        </div>
+
+        <div class="loginwrapper">
+            <div class="title-text">
+                <div class="title login">Login</div>
+                <div class="title signup">Sign Up</div>
+            </div>
+            <div class="form-container">
+                <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">Login</label>
+                    <label for="signup" class="slide signup">Be a member</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <div class="form-inner">
+                    <form action="#" class="login">
+                        <div class="field">
+                            <input type="text" placeholder="Username" required>
+                        </div>
+                 <div class="field">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="pass-link">
+                    <a href="#" class="Forgotpw">Forgot password?</a></div>
+                        <div class="field btn7">
+                            <div class="btn-layer"></div>
+                                <input type="submit" value="Login">
+                        </div>
+                        <div class="signup-link">Not a member? <a href="">Sign up now!</a></div>
+                    </form>
+                    <form action="#" class="signup">
+                        <div class="field">
+                            <input type="text" placeholder="Desired Username" required>
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="field">
+                        <input type="password" placeholder="Confirm password" required>
+                        </div>
+                        <div class="field btn7">
+                            <div class="btn-layer"></div>
+                            <input type="submit" value="Sign Up Now">
+                        </div>
+                    </form>
+                 </div>
+            </div>
+      </div>
+
+      <script>
+            const loginText = document.querySelector(".title-text .login");
+            const loginForm = document.querySelector("form.login");
+            const loginBtn = document.querySelector("label.login");
+            const signupBtn = document.querySelector("label.signup");
+            const signupLink = document.querySelector("form .signup-link a");
+            signupBtn.onclick = (()=>{
+              loginForm.style.marginLeft = "-50%";
+              loginText.style.marginLeft = "-50%";
+            });
+            loginBtn.onclick = (()=>{
+              loginForm.style.marginLeft = "0%";
+              loginText.style.marginLeft = "0%";
+            });
+            signupLink.onclick = (()=>{
+              signupBtn.click();
+              return false;
+            });
+        </script>
+
+        <div class="footer">
+			<div class="container">
+				<div class="row">					
+					<div class="footer-col-2">
+						<image src="Image/dslogo.jpg" alt="Denshi Logo 2"/>
+						<p>An online shopping platform crafted for gamers.</p>
+						<p>Toll free line <i class="fas fa-phone"></i> : 123-456-789</p>
+						<p>More inquiries <i class="fas fa-envelope"></i> : support@denshi.com</p>
+					</div>
+					<div class="footer-col-1">
+						<h3>Download our phone application below</h3>
+						<p>Download our phone application on your Android and iOS device today</p>
+						<div class="app-logo">
+							<a href="https://play.google.com" target="_blank"><img src="Image/googleplay.png" alt="GooglePlay"/></a>
+							<a href="https://www.apple.com/my/app-store/" target="_blank"><img src="Image/appstore.png" alt="AppStore"/></a>
+						</div>
+					</div>
+					<div class="footer-col-3">
+						<h3>Extra</h3>
+						<ul>
+							<li><a href="dsredeem.html" class="feet">Coupons/Vouchers</a></li>
+							<li><a href="dsnewsletter.html" class="feet">Newsletter</a></li>
+							<li><a href="" class="feet">Return Policy</a></li>
+							<li><a href="" class="feet">Careers</a></li>
+						</ul>
+					</div>
+					<div class="footer-col-4">
+						<h3>Social Media</h3>
+						<ul>
+							<li><a href="https://www.facebook.com/" class="feet" target="_blank">Facebook</a></li>
+							<li><a href="https://www.twitter.com/" class="feet" target="_blank">Twitter</a></li>
+							<li><a href="https://www.instagram.com/" class="feet" target="_blank">Instagram</a></li>
+							<li><a href="https://www.youtube.com/" class="feet" target="_blank">Youtube</a></li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<p class="copyright">Copyright © 2021 Denshi. All rights reserved.</p>
+			</div>
+		</div>
+	</body>
+</html>
